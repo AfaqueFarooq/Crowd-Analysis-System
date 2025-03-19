@@ -87,7 +87,7 @@ Due to GitHub's file size limitations, the `yolov3.weights` file (which is essen
 ### 2. Dashboard GUI
 ![Dashboard GUI](images/dashboardGUInew.png)
 
-### 3. New Dashboard GUI (Alternate View)
+### 3. Dashboard GUI 
 ![Dashboard GUI (Alternate)](images/dashboardGUInew2.png)
 
 ### 4. People Count
