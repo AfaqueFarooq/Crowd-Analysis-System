@@ -1,0 +1,101 @@
+
+    <div class="sidebar">
+        
+        <div class="sidebar-wrapper" style="background-color: rgb(128, 128, 243);
+                                            border-radius: 5px;">
+            <div class="logo">
+                <a href="/" class="simple-text logo-mini">
+                    FYP
+                </a>
+                <a href="/" class="simple-text logo-normal">
+                    Retail Analytics
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="{% if 'index' in segment %} active {% endif %} ">
+                    <a href="/">
+                        <i class="tim-icons icon-chart-pie-36"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/people">
+                        <i class="tim-icons icon-triangle-right-17"></i>
+                        <p>People Count</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/gender">
+                        <i class="tim-icons icon-single-02"></i>
+                        <p>Gender Classification</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/shoplifting">
+                        <i class="tim-icons icon-user-run"></i>
+                        <p>Shoplifting Detection</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/parking">
+                        <i class="tim-icons icon-bus-front-12"></i>
+                        <p>Parking Space Detection</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/get-data">
+                        <i class="tim-icons icon-tablet-2"></i>
+                        <p>Tabular Description</p>
+                    </a>
+                </li>
+                <!-- <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/user.html">
+                        <i class="tim-icons icon-single-02"></i>
+                        <p>User Profile</p>
+                    </a>
+                </li>
+                <li class="{% if 'icons' in segment %} active {% endif %}">
+                    <a href="/icons.html">
+                        <i class="tim-icons icon-atom"></i>
+                        <p>Icons</p>
+                    </a>
+                </li>
+                <li class="{% if 'map' in segment %} active {% endif %}">
+                    <a href="/map.html">
+                        <i class="tim-icons icon-pin"></i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+                <li class="{% if 'notifications' in segment %} active {% endif %}">
+                    <a href="/notifications.html">
+                        <i class="tim-icons icon-bell-55"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>  
+                <li class="{% if 'tables' in segment %} active {% endif %}">
+                    <a href="/tables.html">
+                        <i class="tim-icons icon-puzzle-10"></i>
+                        <p>Tables</p>
+                    </a>
+                </li
+                <li class="{% if 'typography' in segment %} active {% endif %}">
+                    <a href="/typography.html">
+                        <i class="tim-icons icon-align-center"></i>
+                        <p>Typography</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rtl.html">
+                        <i class="tim-icons icon-world"></i>
+                        <p>RTL Support</p>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="{{ url_for('authentication_blueprint.logout') }}">
+                        <i class="tim-icons icon-button-power"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,64 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card " style="width: 98%; margin-top: 50px;">
+                <div class="card-header ">
+                    <h4 class="card-title">Shoplifting Alert</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th scope="col">Serial No</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Normal</th>
+                                    <th scope="col">Bag</th>
+                                    <th scope="col">Clothes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in data %}
+                                <tr>
+                                    {% if i %}
+                                    <td>{{ i['index'] }}</td>
+                                    <td>{{ i['time'] }}</td>
+                                    <td>{{ i['normal'] }}</td>
+                                    <td>{{ i['bag'] }}</td>
+                                    <td>{{ i['clothes'] }}</td>
+                                    {% endif %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+
+
+<script>
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+    });
+</script>
+
+{% endblock javascripts %}

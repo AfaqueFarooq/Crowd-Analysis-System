@@ -1,0 +1,44 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} People Count {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="row">
+            <div style= "margin: auto; align-items: center;"class="data">
+                <h1 style="text-align: center !important; font-weight: bold; " >People Count</h1>
+                {% if name == '' %}
+                    <img style="height: 80%; width: 100%;" src ="/static/assets/img/upload.png">
+                {% else %}
+                    <img style="height: 80%; width: 100%;" src ="{{ url_for('home_blueprint.peopleCount') }}">
+                {% endif %}
+                <form class="form-inline center-block" action="/people" method="POST" enctype="multipart/form-data">
+                <div style="display: flex; justify-content: center !important; text-align: center; font-size: large;" class="mb-xxl-2">
+                    <label for="formFile" class="form-label">Upload your video!</label>
+                    <input class="form-control" name= "formFile" type="file" accept=".mp4" id="formFile">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+{% endblock %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+<!-- <script>
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+    });
+</script> -->
+
+{% endblock javascripts %}

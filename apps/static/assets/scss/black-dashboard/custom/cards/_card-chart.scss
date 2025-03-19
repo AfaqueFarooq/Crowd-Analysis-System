@@ -1,0 +1,113 @@
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+
+  .top-cards {
+      position: relative;
+      background: var(--white);
+      padding: 30px;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .numbers {
+          position: relative;
+          font-weight: 500;
+          font-size: 2.5em;
+          color: var(--blue);
+      }
+
+      .name {
+          color: var(--black2);
+          font-size: 1.1em;
+          margin-top: 5px;
+      }
+
+      .iconBox {
+          font-size: 3rem;
+          color: var(--black2);
+      }
+  }
+}
+
+
+
+.card-chart {
+  overflow: hidden;
+  .card-header{
+    .card-title{
+      i{
+        font-size: 16px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+      }
+    }
+    .card-category{
+      margin-bottom: 5px;
+    }
+  }
+    .card-body{
+      padding-left: 5px;
+      padding-right: 5px;
+      .tab-space{
+        padding: 0;
+      }
+    }
+  .table{
+    margin-bottom: 0;
+
+    td{
+      border-top: none;
+      border-bottom: 1px solid rgba($white,0.1);
+    }
+  }
+
+  .card-progress {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .chart-area {
+    height: 220px;
+    width: 100%;
+  }
+  .card-footer {
+    margin-top: 15px;
+
+    .stats{
+      color: $dark-gray;
+    }
+  }
+
+  .dropdown{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    .btn{
+      margin: 0;
+    }
+  }
+
+  &.card-chart-pie{
+    .chart-area{
+      padding: 10px 0 25px;
+      height: auto;
+    }
+
+    .card-title{
+      margin-bottom: 10px;
+      i{
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+}

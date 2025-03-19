@@ -1,0 +1,62 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Shoplifting Detection {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="row">
+            <div style= "margin: auto; align-items: center;"class="data">
+                <h1 style="text-align: center !important; font-weight: bold; " >Shoplifting Detection</h1>
+                {% if name == '' %}
+                    <img style="height: 80%; width: 100%;" src ="/static/assets/img/upload.png">
+                {% else %}
+                    <img style="height: 80%; width: 100%;" src ="{{ url_for('home_blueprint.shoplifting_fetch') }}">
+                {% endif %}
+                <form class="form-inline center-block" action="/shoplifting" method="POST" enctype="multipart/form-data">
+                <div style="display: flex; justify-content: center !important; text-align: center; font-size: large;" class="mb-xxl-2">
+                    <label for="formFile" class="form-label">Upload your video!</label>
+                    <input class="form-control" name= "formFile" type="file" accept=".gif" id="formFile">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+                <form>
+                  <button type="submit" formaction="/get-shoplifting-data" style= "position:absolute; align-items: center;">
+                      <i class="tim-icons icon-user-run"> </i>
+                      <p style="color: black;">Shoplifting Records</p>
+                  </button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <div>
+        {% with errors = get_flashed_messages(category_filter=["error"]) %}
+          {% if errors %}
+          <ul>
+          {% for msg in errors %}
+            <li>{{ msg }}</li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+        {% endwith %}
+      </div>
+
+{% endblock %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+<!-- <script>
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+    });
+</script> -->
+
+{% endblock javascripts %}
