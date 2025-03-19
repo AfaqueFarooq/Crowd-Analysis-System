@@ -75,3 +75,35 @@ To get started with the project, follow the steps below:
 
 Due to GitHub's file size limitations, the `yolov3.weights` file (which is essential for YOLO-based object detection in this project) has been excluded from the repository. The file exceeds GitHub's 100MB size limit, and as such, it could not be uploaded.
 
+## Dashboard Screenshots
+
+### 1. Tabular Description GUI
+![Tabular Description GUI](images/TabularDescriptionGUI.png)
+
+### 2. UDB1 Screenshot
+![UDB1](images/UDB1.png)
+
+### 3. UDB2 Screenshot
+![UDB2](images/UDB2.png)
+
+### 4. Architecture Diagram
+![Architecture Diagram](images/architecture.png)
+
+### 5. New Dashboard GUI
+![Dashboard GUI](images/dashboardGUInew.png)
+
+### 6. New Dashboard GUI (Alternate View)
+![Dashboard GUI (Alternate)](images/dashboardGUInew2.png)
+
+### 7. Design Methodology
+![Design Methodology](images/designMethadology.png)
+
+### 8. Login GUI
+![Login GUI](images/loginGUI.png)
+
+### 9. Parking Space Detection GUI
+![Parking Space Detection](images/parkingSpaceDetectionGUI.png)
+
+### 10. People Count GUI
+![People Count GUI](images/peopleCountGUI.png)
+
