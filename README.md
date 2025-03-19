@@ -56,6 +56,9 @@ This project utilizes **Python** as the primary language for backend development
 - **Firebase** (Database)
 - **YOLO (You Only Look Once)** for object detection, including shoplifting detection, people counting, gender classification, and parking space detection.
 
+### Architecture Diagram
+![Architecture Diagram](images/architecture.png)
+
 ### Key AI Techniques:
 
 - **Object Tracking**: Used for detecting and tracking objects in a video stream, allowing for people counting and behavior analysis.
@@ -77,33 +80,44 @@ Due to GitHub's file size limitations, the `yolov3.weights` file (which is essen
 
 ## Dashboard Screenshots
 
-### 1. Tabular Description GUI
-![Tabular Description GUI](images/TabularDescriptionGUI.png)
+### 1. Login GUI
+![Login GUI](images/loginGUI.png)
 
-### 2. UDB1 Screenshot
-![UDB1](images/UDB1.png)
 
-### 3. UDB2 Screenshot
-![UDB2](images/UDB2.png)
-
-### 4. Architecture Diagram
-![Architecture Diagram](images/architecture.png)
-
-### 5. New Dashboard GUI
+### 2. Dashboard GUI
 ![Dashboard GUI](images/dashboardGUInew.png)
 
-### 6. New Dashboard GUI (Alternate View)
+### 3. New Dashboard GUI (Alternate View)
 ![Dashboard GUI (Alternate)](images/dashboardGUInew2.png)
+
+### 4. People Count
+![People Count GUI](images/peopleCountGUI.png)
+
+### 5. Parking Space Detection
+![Parking Space Detection](images/parkingSpaceDetectionGUI.png)
+
+### 6. Tabular Description
+![Tabular Description GUI](images/TabularDescriptionGUI.png)
 
 ### 7. Design Methodology
 ![Design Methodology](images/designMethadology.png)
 
-### 8. Login GUI
-![Login GUI](images/loginGUI.png)
+### 8. UDB1
+![UDB1](images/UDB1.png)
 
-### 9. Parking Space Detection GUI
-![Parking Space Detection](images/parkingSpaceDetectionGUI.png)
+### 9. UDB2
+![UDB2](images/UDB2.png)
 
-### 10. People Count GUI
-![People Count GUI](images/peopleCountGUI.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
