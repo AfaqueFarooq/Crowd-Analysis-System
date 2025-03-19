@@ -69,3 +69,9 @@ To get started with the project, follow the steps below:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/WEB-BASED-REAL-TIME-CROWD-ANALYSIS.git
+
+
+### Exclusion of `yolov3.weights`
+
+Due to GitHub's file size limitations, the `yolov3.weights` file (which is essential for YOLO-based object detection in this project) has been excluded from the repository. The file exceeds GitHub's 100MB size limit, and as such, it could not be uploaded.
+
