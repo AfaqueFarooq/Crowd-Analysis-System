@@ -44,6 +44,10 @@ In today's world, retail stores require advanced solutions to help improve effic
 - Develop models for **shoplifting detection**.
 - Develop models for **parking space detection**.
 
+
+### Architecture Diagram
+![Architecture Diagram](images/architecture.png)
+
 ## Methodology
 
 This project utilizes **Python** as the primary language for backend development and **Flask** for the frontend. The core of the system leverages **Machine Learning** and **Deep Learning** techniques for real-time video analytics. Additionally, **Firebase Database** will be used for storing and retrieving data.
@@ -56,9 +60,6 @@ This project utilizes **Python** as the primary language for backend development
 - **Firebase** (Database)
 - **YOLO (You Only Look Once)** for object detection, including shoplifting detection, people counting, gender classification, and parking space detection.
 
-### Architecture Diagram
-![Architecture Diagram](images/architecture.png)
-
 ### Key AI Techniques:
 
 - **Object Tracking**: Used for detecting and tracking objects in a video stream, allowing for people counting and behavior analysis.
@@ -68,6 +69,7 @@ This project utilizes **Python** as the primary language for backend development
 ### Exclusion of `yolov3.weights`
 
 Due to GitHub's file size limitations, the `yolov3.weights` file (which is essential for YOLO-based object detection in this project) has been excluded from the repository. The file exceeds GitHub's 100MB size limit, and as such, it could not be uploaded.
+You can download the `yolov3.weights` file from [this link](<https://drive.google.com/file/d/1hZq_EHyWnApqI4LphZHT-2gQoVubMaKs/view?usp=sharing>).
 
 ## Dashboard Screenshots
 
